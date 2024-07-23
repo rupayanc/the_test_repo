@@ -8,3 +8,4 @@ workflows:
     name: the_bg_change_api.json
     description: ''
     file: the_folder/the_bg_change_api.json
+    skip_preprocess: true
