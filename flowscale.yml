@@ -1,4 +1,4 @@
-version: 0
+version: 1
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -9,3 +9,28 @@ workflows:
     description: ''
     file: the_folder/the_bg_change_api.json
     skip_preprocess: true
+    inputs:
+      - path: 9.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_31787
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+      - path: 6.inputs.text
+        label: prompt
+        parameter_name: text_15003
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 10.inputs.image
+        label: img
+        parameter_name: image_75767
+        type: string
+        demo_type: image
+        category: input
+        randomize: false
+    outputs:
+      - label: output
+        demo_type: image
